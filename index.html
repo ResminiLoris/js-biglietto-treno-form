@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <section id="form-section">
+       <h2>inserisci i tuoi dati di viaggio</h2>
+
+       <div>
+           <label for="name">nome passeggero</label>
+           <input type="text" id="name" class="form-field">
+       </div>
+       <div>
+           <label for="kms">Distanza in:</label>
+           <input type="number" class="form-field" id="kms" min="10" value="10">
+       </div>
+       <div>
+           <label for="age">fascia d'età:</label>
+           <select id="age">
+               <option value="min">minorenne</option>
+               <option value="mag">maggiorenne</option>
+               <option value="over65">over65</option>
+           </select>
+       </div>
+
+       <div>
+           <button type="button" id="generate-ticket">genera biglietto</button>
+       </div>
+   </section>
+   <hr>
+   <section id="ticket-section">
+       <h2>il tuo biglietto</h2>
+       <div>
+           <p>
+               <strong>Nome Passeggero</strong>
+               <span id="passenger-name"></span>
+           </p>
+           <p><strong>offerta:</strong><span id="discount"></span></p>
+           <p><strong>carrozza:</strong><span id="wagon"></span></p>
+           <p><strong>codice treno:</strong><span id="train-code"></span></p>
+           <p><strong>prezzo del biglietto:</strong><span id="price"></span></p>
+       </div>
+   </section>
+   <script src="./script.js"></script>
+</body>
+</html>
