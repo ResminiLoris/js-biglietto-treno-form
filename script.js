@@ -9,10 +9,12 @@ var wagonElement = document.getElementById("wagon");
 var trainCodeElement = document.getElementById("train-code");
 var priceElement = document.getElementById("price");
 
-button.addEventListener('click', function () {
-    var nameValue = nameField.Value;
-    var kmsValue = kmsField.Value;
-    var ageValue = ageField.Value;
+button.addEventListener('click', function() {
+console.log(nameField)
+console.log(nameField)
+    var nameValue = nameField.value;
+    var kmsValue = kmsField.value;
+    var ageValue = ageField.value;
 
     var price = 0.21 * kmsValue;
     var discountDisplay = "tariffa ordinaria";
